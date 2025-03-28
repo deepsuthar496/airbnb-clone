@@ -4,6 +4,8 @@
 
 **URL**: https://lovable.dev/projects/0b97496e-952c-43b9-87a4-e0c8e3b70f16
 
+**VERCEL**: https://airbnb-clone-phi-jet-74.vercel.app/
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
