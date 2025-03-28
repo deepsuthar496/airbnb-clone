@@ -104,19 +104,20 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       </div>
       
       <Link to={`/property/${property.id}`}>
-        <div className="mt-3 px-1">
+        <div className="mt-4 px-0.5">
           <div className="flex justify-between items-start">
             <h3 className="font-semibold text-airbnb-dark text-base line-clamp-1">{property.location}</h3>
-            <div className="flex items-center">
+            <div className="flex items-center gap-1">
               <Star className="h-4 w-4 fill-airbnb-dark stroke-none" />
-              <span className="ml-1 text-sm font-medium">{property.rating}</span>
+              <span className="text-sm font-medium">{property.rating}</span>
             </div>
           </div>
-          <p className="text-airbnb-gray text-sm mt-1 line-clamp-1">{property.type}</p>
-          <p className="text-airbnb-gray text-sm mt-1">Nov 12-17</p>
-          <p className="text-airbnb-dark text-sm mt-1 font-medium">
-            <span className="font-semibold">${property.price}</span> night
-          </p>
+          <p className="text-airbnb-gray text-sm mt-1.5 line-clamp-1">{property.type}</p>
+          <p className="text-airbnb-gray text-sm mt-1.5">Nov 12-17</p>
+          <div className="mt-2.5 flex items-baseline">
+            <span className="font-semibold text-airbnb-dark">${property.price}</span>
+            <span className="text-airbnb-dark text-sm ml-1">night</span>
+          </div>
         </div>
       </Link>
     </div>
