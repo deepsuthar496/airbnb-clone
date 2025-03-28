@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Star, Heart, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, Heart, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import { Property } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
@@ -12,6 +12,7 @@ interface PropertyCardProps {
 const PropertyCard = ({ property }: PropertyCardProps) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imageError, setImageError] = useState<Record<number, boolean>>({});
   
   const images = Array.isArray(property.images) && property.images.length > 0 
     ? property.images 
@@ -24,16 +25,28 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
   const prevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
+
+  const handleImageError = (index: number) => {
+    setImageError(prev => ({ ...prev, [index]: true }));
+  };
   
   return (
     <div className="group transition-all duration-300 hover:shadow-lg rounded-xl">
-      <div className="relative overflow-hidden rounded-xl aspect-square">
+      <div className="relative overflow-hidden rounded-xl aspect-square bg-gray-100">
         <Link to={`/property/${property.id}`}>
-          <img 
-            src={images[currentImageIndex]} 
-            alt={property.title}
-            className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-          />
+          {imageError[currentImageIndex] ? (
+            <div className="w-full h-full flex flex-col items-center justify-center text-gray-400">
+              <ImageIcon className="h-12 w-12 mb-2" />
+              <span className="text-sm font-medium">{property.title}</span>
+            </div>
+          ) : (
+            <img 
+              src={images[currentImageIndex]} 
+              alt={property.title}
+              className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+              onError={() => handleImageError(currentImageIndex)}
+            />
+          )}
         </Link>
         
         {images.length > 1 && (
