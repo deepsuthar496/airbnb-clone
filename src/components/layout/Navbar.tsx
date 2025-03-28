@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <header 
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        isScrolled ? 'bg-white shadow-md' : 'bg-white border-b border-gray-100'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,12 +40,12 @@ const Navbar = () => {
           </Link>
 
           {/* Search Bar */}
-          <div className="hidden md:flex items-center justify-between rounded-full border border-gray-200 shadow-sm px-4 py-2 hover:shadow-md transition-all duration-200 cursor-pointer">
+          <div className="hidden md:flex items-center justify-between rounded-full border border-gray-200 shadow-sm px-2 py-2 hover:shadow-md transition-all duration-200 cursor-pointer">
             <div className="px-3 font-medium text-sm">Anywhere</div>
             <div className="h-5 border-r border-gray-300"></div>
             <div className="px-3 font-medium text-sm">Any week</div>
             <div className="h-5 border-r border-gray-300"></div>
-            <div className="px-3 text-gray-400 text-sm">Add guests</div>
+            <div className="px-3 text-gray-500 text-sm">Add guests</div>
             <div className="bg-airbnb-primary p-2 rounded-full text-white">
               <Search size={16} />
             </div>

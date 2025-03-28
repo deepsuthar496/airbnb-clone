@@ -10,6 +10,7 @@ interface PropertyCardProps {
 
 const PropertyCard = ({ property }: PropertyCardProps) => {
   const [isFavorite, setIsFavorite] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   return (
     <div className="group">
@@ -18,7 +19,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
           <img 
             src={property.image} 
             alt={property.title}
-            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+            className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
           />
         </Link>
         <button 
@@ -26,21 +27,22 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
           className="absolute top-3 right-3 p-1.5 rounded-full"
         >
           <Heart 
-            className={`h-5 w-5 ${isFavorite ? 'fill-airbnb-primary stroke-airbnb-primary' : 'stroke-white'}`} 
+            className={`h-6 w-6 drop-shadow-md ${isFavorite ? 'fill-airbnb-primary stroke-airbnb-primary' : 'stroke-white fill-black/20'}`} 
           />
         </button>
       </div>
       
       <Link to={`/property/${property.id}`}>
-        <div className="mt-2">
+        <div className="mt-3">
           <div className="flex justify-between items-start">
-            <h3 className="font-medium text-airbnb-dark text-md">{property.location}</h3>
+            <h3 className="font-semibold text-airbnb-dark text-base">{property.location}</h3>
             <div className="flex items-center">
-              <Star className="h-4 w-4 fill-airbnb-dark stroke-airbnb-dark" />
-              <span className="ml-1 text-sm">{property.rating}</span>
+              <Star className="h-4 w-4 fill-airbnb-dark stroke-none" />
+              <span className="ml-1 text-sm font-medium">{property.rating}</span>
             </div>
           </div>
           <p className="text-airbnb-gray text-sm mt-1">{property.type}</p>
+          <p className="text-airbnb-gray text-sm mt-1">Nov 12-17</p>
           <p className="text-airbnb-dark text-sm mt-1">
             <span className="font-semibold">${property.price}</span> night
           </p>
