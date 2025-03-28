@@ -1,4 +1,3 @@
-
 export interface Property {
   id: string;
   title: string;
@@ -172,7 +171,7 @@ export const properties: Property[] = [
     id: "7",
     title: "Skyline Penthouse with Terrace",
     location: "Seattle, WA",
-    image: "https://images.unsplash.com/photo-1594540637720-9b14737e31f6?auto=format&fit=crop&q=80&w=2070",
+    image: "https://images.unsplash.com/photo-1469022563428-aa04fef9f5a2",
     price: 280,
     rating: 4.9,
     type: "Condo",
@@ -186,7 +185,7 @@ export const properties: Property[] = [
     },
     description: "Take in breathtaking city views from this luxury penthouse. The spacious terrace is perfect for morning coffee or evening cocktails with a view. The building offers premium amenities and is located in a prime downtown location.",
     images: [
-      "https://images.unsplash.com/photo-1594540637720-9b14737e31f6?auto=format&fit=crop&q=80&w=2070",
+      "https://images.unsplash.com/photo-1469022563428-aa04fef9f5a2",
       "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&q=80&w=2070",
       "https://images.unsplash.com/photo-1632558262155-9a4d3e72e27f?auto=format&fit=crop&q=80&w=2071"
     ]
