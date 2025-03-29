@@ -37,7 +37,7 @@ This project showcases the power of AI-assisted development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/airbnb-clone.git
+git clone https://github.com/deepsuthar496/airbnb-clone.git
 
 # Navigate to the project directory
 cd airbnb-clone
