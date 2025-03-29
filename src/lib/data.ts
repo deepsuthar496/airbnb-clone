@@ -187,7 +187,7 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1469022563428-aa04fef9f5a2",
       "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&q=80&w=2070",
-      "https://images.unsplash.com/photo-1632558262155-9a4d3e72e27f?auto=format&fit=crop&q=80&w=2071"
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=2071"
     ]
   },
   {
