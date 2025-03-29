@@ -49,7 +49,7 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=2070",
       "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=2070",
-      "https://images.unsplash.com/photo-1585128993280-9456f2f5070c?auto=format&fit=crop&q=80&w=2074"
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=2074"
     ]
   },
   {
@@ -72,7 +72,7 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=2075",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=2053",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab8e17a9?auto=format&fit=crop&q=80&w=2070"
+      "https://images.unsplash.com/photo-1605549339992-83721992836e?auto=format&fit=crop&q=80&w=2070"
     ]
   },
   {
@@ -141,7 +141,7 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=2070",
       "https://images.unsplash.com/photo-1560448075-bb485b067938?auto=format&fit=crop&q=80&w=2070",
-      "https://images.unsplash.com/photo-1560448204-61dc0e62f8a6?auto=format&fit=crop&q=80&w=2070"
+      "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=2070"
     ]
   },
   {
@@ -163,7 +163,7 @@ export const properties: Property[] = [
     description: "Relax in this charming cottage with a beautiful garden. Perfect for those who want a peaceful retreat while still being close to the city. The cottage is equipped with everything you need for a comfortable stay.",
     images: [
       "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?auto=format&fit=crop&q=80&w=2070",
-      "https://images.unsplash.com/photo-1596753854990-660bbccc4a2e?auto=format&fit=crop&q=80&w=2070",
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=2070",
       "https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?auto=format&fit=crop&q=80&w=2070"
     ]
   },
@@ -210,7 +210,7 @@ export const properties: Property[] = [
     images: [
       "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&q=80&w=2070",
       "https://images.unsplash.com/photo-1600488999585-e4364713b90a?auto=format&fit=crop&q=80&w=2070",
-      "https://images.unsplash.com/photo-1503174971373-b1f69f7279fc?auto=format&fit=crop&q=80&w=2013"
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=2013"
     ]
   }
 ];
